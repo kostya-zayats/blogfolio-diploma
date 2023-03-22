@@ -1,0 +1,74 @@
+nav {
+  width: 100%;
+  height: 9.6rem;
+  background-color: $secondary-bg;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  padding-left: 3.2rem;
+}
+
+.nav-logo img {
+  display: block;
+}
+
+.nav-search {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3.2rem;
+}
+
+.nav-search-ico {
+  position: absolute;
+  top: .5rem;
+  right: 3.2rem;
+  z-index: 1;
+}
+
+.nav-search-input {
+  background-color: transparent;
+  display: block;
+  flex-grow: 1;
+  font-size: 1.6rem;
+  line-height: 3.4rem;
+  font-weight: 600;
+  padding: 0 3.2rem 0 0;
+  border: 0;
+  position: relative;
+  z-index: 5;
+}
+
+.nav-user {
+  height: 100%;
+  border-left: .1rem solid $nav-border;
+  padding: 2.4rem 3.2rem;
+  font-size: 1.6rem;
+  line-height: 3.4rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-user-initials {
+  color: #fff;
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-right: 1.6rem;
+  background: linear-gradient(133.87deg, #4D0AC7 -10.18%, #912EF2 108.59%);
+  border-radius: .4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
