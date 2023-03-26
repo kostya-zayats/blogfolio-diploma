@@ -11,6 +11,8 @@ const App = () => {
   return (
     <div className='main-container'>
 
+      <Navigation/>
+
       <div className="container">
 
         <Button
