@@ -1,0 +1,7 @@
+@mixin transition($x...){
+  transition: $x;
+
+  @media (max-width: 900px) {
+    transition: none;
+  }
+}
