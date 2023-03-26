@@ -1,0 +1,15 @@
+@import "../../Styles/Vars/Vars.module";
+@import "../../Styles/Mixin/Mixin.module";
+
+.footer {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: $footer-text-color;
+  width: 100%;
+  border-top: .1rem solid $footer-border;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.4rem 0;
+}

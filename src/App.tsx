@@ -5,6 +5,7 @@ import Navigation from "./Components/Navigation/Navigation";
 import NewsListUnit from "./Components/NewsListUnit/NewsListUnit";
 import NewsList from "./Components/NewsList/NewsList";
 import {ArrowToLeftIcon, ArrowToRightIcon, FacebookIcon, MoreIcon, SearchIcon, TwitterIcon} from "./Assets/icons";
+import Footer from "./Components/Footer/Footer";
 
 
 const App = () => {
@@ -54,6 +55,8 @@ const App = () => {
         <TwitterIcon />
         <SearchIcon />
         <MoreIcon />
+
+        <Footer />
 
       </div>
 
