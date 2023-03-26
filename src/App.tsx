@@ -6,6 +6,7 @@ import NewsListUnit from "./Components/NewsListUnit/NewsListUnit";
 import NewsList from "./Components/NewsList/NewsList";
 import {ArrowToLeftIcon, ArrowToRightIcon, FacebookIcon, MoreIcon, SearchIcon, TwitterIcon} from "./Assets/icons";
 import Footer from "./Components/Footer/Footer";
+import Header from "./Components/Header/Header";
 
 
 const App = () => {
@@ -16,6 +17,8 @@ const App = () => {
       <Navigation/>
 
       <div className="container">
+
+        <Header title={'Blog'} />
 
         <NewsList>
           <NewsListUnit/>
