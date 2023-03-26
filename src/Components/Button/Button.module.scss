@@ -1,0 +1,30 @@
+@import "../../Styles/Vars/Vars.module";
+@import "../../Styles/Mixin/Mixin.module";
+
+.primary {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  border: 0;
+  background: $active-color;
+  border-radius: .4rem;
+  color: $active-text-color;
+  padding: 1.6rem 2rem;
+}
+
+.secondary {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  border: 0;
+  background: $btn-secondary-bg;
+  border-radius: .4rem;
+  padding: 1.6rem 2rem;
+}
+
+.disabled {
+  cursor: default;
+  background-color: $btn-secondary-bg;
+  color: $btn-disabled-text-color;
+  pointer-events: none;
+}

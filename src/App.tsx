@@ -13,7 +13,22 @@ const App = () => {
 
       <div className="container">
 
-        
+        <Button
+          title={'Primary'}
+          type={ButtonTypes.Primary}
+          onClick={() => alert('Primary')}
+        />
+        <Button
+          title={'Primary'}
+          type={ButtonTypes.Primary}
+          onClick={() => alert('Primary')}
+          disabled
+        />
+        <Button
+          title={'Secondary'}
+          type={ButtonTypes.Secondary}
+          onClick={() => alert('Primary')}
+        />
       </div>
 
     </div>
