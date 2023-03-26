@@ -15,7 +15,20 @@ const App = () => {
 
       <div className="container">
 
-        <NewsList/>
+        <NewsList>
+          <NewsListUnit/>
+          <NewsListUnit/>
+          <NewsListUnit/>
+          <NewsListUnit/>
+          <NewsListUnit/>
+          <NewsListUnit/>
+          <NewsListUnit/>
+          <NewsListUnit/>
+          <NewsListUnit/>
+          <NewsListUnit/>
+          <NewsListUnit/>
+          <NewsListUnit/>
+        </NewsList>
 
         <Button
           title={'Primary'}
