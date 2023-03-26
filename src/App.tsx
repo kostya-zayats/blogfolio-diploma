@@ -15,6 +15,8 @@ const App = () => {
 
       <div className="container">
 
+        <NewsList/>
+
         <Button
           title={'Primary'}
           type={ButtonTypes.Primary}
