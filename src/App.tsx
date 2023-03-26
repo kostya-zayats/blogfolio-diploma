@@ -4,6 +4,7 @@ import Button, { ButtonTypes } from "./Components/Button";
 import Navigation from "./Components/Navigation/Navigation";
 import NewsListUnit from "./Components/NewsListUnit/NewsListUnit";
 import NewsList from "./Components/NewsList/NewsList";
+import {ArrowToLeftIcon, ArrowToRightIcon, FacebookIcon, MoreIcon, SearchIcon, TwitterIcon} from "./Assets/icons";
 
 
 const App = () => {
@@ -46,6 +47,14 @@ const App = () => {
           type={ButtonTypes.Secondary}
           onClick={() => alert('Primary')}
         />
+
+        <ArrowToLeftIcon />
+        <ArrowToRightIcon />
+        <FacebookIcon />
+        <TwitterIcon />
+        <SearchIcon />
+        <MoreIcon />
+
       </div>
 
     </div>
