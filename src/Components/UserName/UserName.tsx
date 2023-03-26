@@ -7,7 +7,7 @@ type UserNameProps = {
 };
 
 const UserName: FC<UserNameProps> = ({title}) => {
-  const initials = title[0] + title[title.lastIndexOf(' ') + 1];
+  const initials = title[0] + title[title.lastIndexOf(' ') + 1].toUpperCase();
 
   return (
     <div className={styles["nav-user"]}>
