@@ -13,3 +13,12 @@
   justify-content: space-between;
   padding: 3.4rem 0;
 }
+
+.footer-theme-switcher-wrap {
+  display: flex;
+  align-items: center;
+
+  label {
+    margin-left: 2rem;
+  }
+}
