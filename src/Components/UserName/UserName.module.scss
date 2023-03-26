@@ -1,0 +1,26 @@
+@import "../../Styles/Vars/Vars.module";
+@import "../../Styles/Mixin/Mixin.module";
+
+.nav-user {
+  height: 100%;
+  border-left: .1rem solid $nav-border;
+  padding: 2.4rem 3.2rem;
+  font-size: 1.6rem;
+  line-height: 3.4rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-user-initials {
+  color: #fff;
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-right: 1.6rem;
+  background: linear-gradient(133.87deg, #4D0AC7 -10.18%, #912EF2 108.59%);
+  border-radius: .4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
