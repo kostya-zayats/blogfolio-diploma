@@ -13,8 +13,14 @@
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 2.8rem;
+  border-radius: 1.6rem;
+  box-shadow: none;
+  transform: none;
+  @include transition(.3s box-shadow, .3s transform);
 
   &:hover {
+    box-shadow: $main-box-shadow;
+    transform: scale(1.05);
 
     .news-list-item-pic-overlay {
       opacity: 0;
