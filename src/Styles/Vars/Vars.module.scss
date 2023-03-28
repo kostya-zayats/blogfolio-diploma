@@ -1,23 +1,50 @@
-$active-color: #6C1BDB;
-$active-text-color: #fff;
-
-$main-text-color: #313037;
-
-$main-bg: #e5e5e5;
-$secondary-bg: #fff;
-
-$nav-border: #f3f3f3;
-$footer-border: rgba(49, 48, 55, 0.1);
-$footer-text-color: rgba(49, 48, 55, 0.5);;
-
-$btn-secondary-bg: rgba(49, 48, 55, 0.1);
-$btn-disabled-text-color: rgba(49, 48, 55, 0.5);
-$text-light: rgba(49, 48, 55, 0.5);
-$registration-light-text: #8D8E97;
-
-$theme-switcher-bg: rgba(49, 48, 55, 0.3);
-
+:root {
+  --active-color: #6C1BDB;
+  --active-text-color: #fff;
+  --main-text-color: #313037;
+  --main-bg: #e5e5e5;
+  --secondary-bg: #fff;
+  --nav-border: #f3f3f3;
+  --footer-border: rgba(49, 48, 55, 0.1);
+  --footer-text-color: rgba(49, 48, 55, 0.5);
+  --btn-secondary-bg: rgba(49, 48, 55, 0.1);
+  --icon-color: #313037;
+  --btn-disabled-text-color: rgba(49, 48, 55, 0.5);
+  --text-light: rgba(49, 48, 55, 0.5);
+  --registration-light-text: #8D8E97;
+  --theme-switcher-bg: rgba(49, 48, 55, 0.3);
+}
 
 .dark-theme {
-  $main-bg: #000;
+  --active-color: #6C1BDB;
+  --active-text-color: #fff;
+  --main-text-color: #fff;
+  --main-bg: #313037;
+  --secondary-bg: #45444b;
+  --nav-border: #313037;
+  --footer-border: rgba(255, 255, 255, 0.1);
+  --footer-text-color: rgba(255, 255, 255, 0.5);
+  --btn-secondary-bg: rgba(255, 255, 255, 0.1);
+  --icon-color: #fff;
+  --btn-disabled-text-color: rgba(255, 255, 255, 0.5);
+  --text-light: rgba(255, 255, 255, 0.5);
+  --registration-light-text: #8D8E97;
+  --theme-switcher-bg: #6C1BDB;
 }
+
+
+
+$active-color: var(--active-color);
+$active-text-color: var(--active-text-color);
+$main-text-color: var(--main-text-color);
+$main-bg: var(--main-bg);
+$secondary-bg: var(--secondary-bg);
+$nav-border: var(--nav-border);
+$footer-border: var(--footer-border);
+$footer-text-color: var(--footer-text-color);
+$btn-secondary-bg: var(--btn-secondary-bg);
+$icon-color: var(--icon-color);
+$btn-disabled-text-color: var(--btn-disabled-text-color);
+$text-light: var(--text-light);
+$registration-light-text: var(--registration-light-text);
+$theme-switcher-bg: var(--theme-switcher-bg);
