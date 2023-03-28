@@ -5,6 +5,7 @@
 
   path {
     fill: $icon-color;
+    @include transition(.3s fill);
   }
 }
 
@@ -12,5 +13,6 @@
 
   path {
     stroke: $icon-color;
+    @include transition(.3s stroke);
   }
 }

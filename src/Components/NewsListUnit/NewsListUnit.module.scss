@@ -54,7 +54,7 @@
   background: linear-gradient(133.87deg, rgba(77, 10, 199, 0.6) -10.18%, rgba(145, 46, 242, 0.6) 108.59%);
   z-index: 1;
   opacity: 1;
-  @include transition(.3s);
+  @include transition(.3s opacity);
 }
 
 .news-list-item-desc {

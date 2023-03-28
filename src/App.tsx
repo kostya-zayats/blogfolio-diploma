@@ -1,12 +1,13 @@
 import React from 'react';
 
 import Button, { ButtonTypes } from "./Components/Button";
-import Navigation from "./Components/Navigation/Navigation";
-import NewsListUnit from "./Components/NewsListUnit/NewsListUnit";
-import NewsList from "./Components/NewsList/NewsList";
+import Navigation from "./Components/Navigation";
+import NewsListUnit from "./Components/NewsListUnit";
+import NewsList from "./Components/NewsList";
 import {ArrowToLeftIcon, ArrowToRightIcon, FacebookIcon, MoreIcon, SearchIcon, TwitterIcon} from "./Assets/icons";
-import Footer from "./Components/Footer/Footer";
-import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import Input from "./Components/Input";
 
 
 const App = () => {
@@ -34,6 +35,8 @@ const App = () => {
           <NewsListUnit/>
           <NewsListUnit/>
         </NewsList>
+
+        <Input type={'text'} placeholder={'Your Name'} />
 
         <Button
           title={'Primary'}

@@ -6,10 +6,11 @@
   font-size: 1.8rem;
   line-height: 2.4rem;
   border: 0;
-  background: $active-color;
+  background-color: $active-color;
   border-radius: .4rem;
   color: $active-text-color;
   padding: 1.6rem 2rem;
+  @include transition(.3s background-color, .3s color);
 }
 
 .secondary {
@@ -17,7 +18,8 @@
   font-size: 1.8rem;
   line-height: 2.4rem;
   border: 0;
-  background: $btn-secondary-bg;
+  background-color: $btn-secondary-bg;
+  @include transition(.3s background-color);
   border-radius: .4rem;
   padding: 1.6rem 2rem;
 }
@@ -26,5 +28,6 @@
   cursor: default;
   background-color: $btn-secondary-bg;
   color: $btn-disabled-text-color;
+  @include transition(.3s background-color, .3s color);
   pointer-events: none;
 }

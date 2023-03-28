@@ -4,6 +4,7 @@
 .nav-user {
   height: 100%;
   border-left: .1rem solid $nav-border;
+  @include transition(.3s border-left);
   padding: 2.4rem 3.2rem;
   font-size: 1.6rem;
   line-height: 3.4rem;

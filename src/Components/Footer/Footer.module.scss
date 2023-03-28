@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 3.4rem 0;
+  @include transition(.3s border-top, .3s color);
 }
 
 .footer-theme-switcher-wrap {

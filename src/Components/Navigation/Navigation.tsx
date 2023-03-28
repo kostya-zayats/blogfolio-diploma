@@ -16,7 +16,7 @@ const Navigation = () => {
       </div>
       <div className={styles["nav-search"]}>
         <SearchIcon unicClass={styles["nav-search-ico"]} />
-        <Input inputType={'text'} unicClass={styles["nav-search-input"]} />
+        <Input type={'text'} unicClass={styles["nav-search-input"]} />
       </div>
       <UserName title={'Kostya Zayats'} />
     </nav>
