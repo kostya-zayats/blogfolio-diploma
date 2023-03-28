@@ -1,0 +1,16 @@
+@import "../../Styles/Vars/Vars.module";
+@import "../../Styles/Mixin/Mixin.module";
+
+.svg-fill {
+
+  path {
+    fill: $icon-color;
+  }
+}
+
+.svg-stroke {
+
+  path {
+    stroke: $icon-color;
+  }
+}

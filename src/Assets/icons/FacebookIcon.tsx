@@ -1,6 +1,8 @@
 import React, {FC} from "react";
 import classnames from "classnames";
 
+import styles from "./Icons.module.scss";
+
 type IconProps = {
   unicClass?: string;
 }
@@ -8,7 +10,12 @@ type IconProps = {
 export const FacebookIcon: FC<IconProps> = ({unicClass}) => {
   return (
     <svg
-      className={classnames(unicClass)}
+      className={
+        classnames(
+          unicClass,
+          styles["svg-stroke"]
+        )
+      }
       width="24"
       height="24"
       viewBox="0 0 24 24"
@@ -16,7 +23,6 @@ export const FacebookIcon: FC<IconProps> = ({unicClass}) => {
       xmlns="http://www.w3.org/2000/svg">
       <path
         d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"
-        stroke="#313037"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"/>
