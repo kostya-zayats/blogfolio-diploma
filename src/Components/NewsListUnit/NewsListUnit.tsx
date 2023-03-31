@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {FC} from 'react';
 
 import styles from './NewsListUnit.module.scss';
 
-const NewsListUnit = () => {
+type InputProps = {
+  title: string;
+}
+
+const NewsListUnit: FC<InputProps> = ({title}) => {
 
   return (
     <div className={styles["news-list-item-wrap"]}>
@@ -13,9 +17,7 @@ const NewsListUnit = () => {
         </div>
         <div className={styles["news-list-item-desc"]}>
           <div className={styles["news-list-item-desc-date"]}>April 20, 2021</div>
-          <div className={styles["news-list-item-title"]}>Astronauts prep for new solar arrays on nearly seven-hour
-            spacewalk
-          </div>
+          <div className={styles["news-list-item-title"]}>{title}</div>
         </div>
       </div>
     </div>

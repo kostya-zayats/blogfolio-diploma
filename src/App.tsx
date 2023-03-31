@@ -25,18 +25,18 @@ const App = () => {
         <Tab />
 
         <NewsList>
-          <NewsListUnit/>
-          <NewsListUnit/>
-          <NewsListUnit/>
-          <NewsListUnit/>
-          <NewsListUnit/>
-          <NewsListUnit/>
-          <NewsListUnit/>
-          <NewsListUnit/>
-          <NewsListUnit/>
-          <NewsListUnit/>
-          <NewsListUnit/>
-          <NewsListUnit/>
+          <NewsListUnit title={'AstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronauts'}/>
+          <NewsListUnit title={'Astronauts prep for new solar'}/>
+          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+          <NewsListUnit title={'Astronauts prep for'}/>
+          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
         </NewsList>
 
         <Input type={'text'} title={'Your Name'} error={'Field is empty'} placeholder={'Your Name'} />

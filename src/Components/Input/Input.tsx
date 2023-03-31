@@ -1,4 +1,4 @@
-import React, {ChangeEvent, FC} from 'react';
+import React, {FC} from 'react';
 import classnames from "classnames";
 
 import styles from './Input.module.scss';
