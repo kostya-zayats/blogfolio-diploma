@@ -8,7 +8,7 @@ const ThemeSwitcher = () => {
 
   const [checked, setChecked] = useState(false);
 
-  if(checked) {
+  if(!checked) {
     getBody.classList.remove("dark-theme");
   } else {
     getBody.classList.add("dark-theme");
