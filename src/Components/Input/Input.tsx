@@ -9,6 +9,7 @@ type InputProps = {
   unicClass?: string;
   title?: string;
   error?: string;
+  onFocus?: () => void;
 }
 
 const Input: FC<InputProps> = ({type, placeholder, title, error, unicClass}) => {
