@@ -1,7 +1,13 @@
 @import "../../Styles/Vars/Vars.module";
 @import "../../Styles/Mixin/Mixin.module";
 
+.input-wrap {
+  display: block;
+  width: 100%;
+}
+
 .input {
+  width: 100%;
   padding: 1.7rem 2rem;
   font-weight: 400;
   font-size: 1.6rem;
@@ -10,4 +16,25 @@
   border-radius: .4rem;
   background-color: $secondary-bg;
   @include transition(.3s background-color);
+}
+
+.error {
+  font-weight: 600;
+  display: block;
+  border: .1rem solid $error-color;
+}
+
+.input-label {
+  margin-bottom: .8rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.input-error-msg {
+  margin-top: 1.6rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: $error-color;
 }

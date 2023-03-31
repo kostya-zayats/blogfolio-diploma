@@ -14,6 +14,7 @@
   --registration-light-text: #8D8E97;
   --theme-switcher-bg: rgba(49, 48, 55, 0.3);
   --main-box-shadow: 0 12px 40px 9px rgba(0, 0, 0, 0.1);
+  --error-color: #FD3419;
 }
 
 .dark-theme {
@@ -32,6 +33,7 @@
   --registration-light-text: #8D8E97;
   --theme-switcher-bg: #6C1BDB;
   --main-box-shadow: none;
+  --error-color: #FD3419;
 }
 
 
@@ -51,3 +53,4 @@ $text-light: var(--text-light);
 $registration-light-text: var(--registration-light-text);
 $theme-switcher-bg: var(--theme-switcher-bg);
 $main-box-shadow: var(--main-box-shadow);
+$error-color: var(--error-color);

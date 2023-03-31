@@ -26,7 +26,7 @@ const Button: FC<ButtonProps> = ({type, title, unicClass, disabled, onClick}) =>
         styles.button,
         buttonClassName,
         unicClass,
-        {[styles.disabled]: !!disabled,}
+        {[styles.disabled]: !!disabled}
       )}
       onClick={onClick}>
       {title}

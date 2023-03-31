@@ -39,7 +39,8 @@ const App = () => {
           <NewsListUnit/>
         </NewsList>
 
-        <Input type={'text'} placeholder={'Your Name'} />
+        <Input type={'text'} title={'Your Name'} error={'Field is empty'} placeholder={'Your Name'} />
+        <Input type={'text'} placeholder={'Your Surname'} />
 
         <Button
           title={'Primary'}
