@@ -8,6 +8,7 @@ import {ArrowToLeftIcon, ArrowToRightIcon, FacebookIcon, MoreIcon, SearchIcon, T
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Input from "./Components/Input";
+import Tab from "./Components/Tab";
 
 
 const App = () => {
@@ -20,6 +21,8 @@ const App = () => {
       <div className="container">
 
         <Header title={'Blog'} />
+
+        <Tab />
 
         <NewsList>
           <NewsListUnit/>
