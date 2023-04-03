@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import NewsList from "../../Components/NewsList";
 import NewsListUnit from "../../Components/NewsListUnit";
 import Header from "../../Components/Header";

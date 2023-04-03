@@ -5,6 +5,7 @@ import Footer from "./Components/Footer";
 import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
 import Home from "./Pages/Home";
+import Post from "./Pages/Post";
 
 
 const App = () => {
@@ -21,6 +22,8 @@ const App = () => {
         <SignUp />
 
         <Home />
+
+        <Post />
 
         <Footer />
 
