@@ -1,0 +1,27 @@
+@import "../../Styles/Vars/Vars.module";
+@import "../../Styles/Mixin/Mixin.module";
+
+.registration-container {
+  display: block;
+}
+
+.home-link {
+  display: block;
+  margin-bottom: 3.2rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+
+  span {
+    cursor: pointer;
+  }
+}
+
+.registration {
+  width: 100%;
+  max-width: 62.4rem;
+  margin: 7.2rem auto;
+  background-color: $secondary-bg;
+  padding: 4rem;
+  border-radius: 1.6rem;
+}

@@ -9,6 +9,7 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Input from "./Components/Input";
 import Tab from "./Components/Tab";
+import FormContainer from "./Components/FormContainer/FormContainer";
 
 
 const App = () => {
@@ -20,7 +21,12 @@ const App = () => {
 
       <div className="container">
 
-        <Header title={'Blog'} />
+        <FormContainer title={'Sign In'}>
+          <Input type={'text'} title={'Surname'} placeholder={'Your Surname'} />
+          <Input type={'text'} title={'Surname'} placeholder={'Your Surname'} />
+        </FormContainer>
+
+        {/*<Header title={'Blog'} />
 
         <Tab />
 
@@ -64,7 +70,7 @@ const App = () => {
         <FacebookIcon />
         <TwitterIcon />
         <SearchIcon />
-        <MoreIcon />
+        <MoreIcon />*/}
 
         <Footer />
 
