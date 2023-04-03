@@ -5,7 +5,7 @@ import Header from "../Header";
 
 type FormContainerProps = {
   title: string;
-  children: React.ReactNode;
+  children: ReactElement;
 }
 
 const FormContainer: FC<FormContainerProps> = ({title, children}) => {

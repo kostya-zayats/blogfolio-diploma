@@ -10,6 +10,7 @@ import Header from "./Components/Header";
 import Input from "./Components/Input";
 import Tab from "./Components/Tab";
 import FormContainer from "./Components/FormContainer/FormContainer";
+import SignIn from "./Pages/SignIn/SignIn";
 
 
 const App = () => {
@@ -21,28 +22,27 @@ const App = () => {
 
       <div className="container">
 
-        <FormContainer title={'Sign In'}>
-          <Input type={'text'} title={'Surname'} placeholder={'Your Surname'} />
-          <Input type={'text'} title={'Surname'} placeholder={'Your Surname'} />
-        </FormContainer>
+        <SignIn />
 
         {/*<Header title={'Blog'} />
 
         <Tab />
 
         <NewsList>
-          <NewsListUnit title={'AstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronauts'}/>
-          <NewsListUnit title={'Astronauts prep for new solar'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
-          <NewsListUnit title={'Astronauts prep for'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+          <>
+            <NewsListUnit title={'AstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronauts'}/>
+            <NewsListUnit title={'Astronauts prep for new solar'}/>
+            <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+            <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+            <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+            <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+            <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+            <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+            <NewsListUnit title={'Astronauts prep for'}/>
+            <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+            <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+            <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+          </>
         </NewsList>
 
         <Input type={'text'} title={'Your Name'} error={'Field is empty'} placeholder={'Your Name'} />

@@ -14,7 +14,7 @@ type ButtonProps = {
   type: ButtonTypes;
   unicClass?: string;
   disabled?: boolean;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const Button: FC<ButtonProps> = ({type, title, unicClass, disabled, onClick}) => {

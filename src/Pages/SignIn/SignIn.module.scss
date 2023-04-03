@@ -1,0 +1,11 @@
+.registration-unit {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-bottom: 4rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
