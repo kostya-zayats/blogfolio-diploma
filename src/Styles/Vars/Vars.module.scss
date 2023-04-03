@@ -4,6 +4,8 @@
   --main-text-color: #313037;
   --main-bg: #e5e5e5;
   --secondary-bg: #fff;
+  --input-bg: #fff;
+  --input-border: rgba(49, 48, 55, 0.1);
   --nav-border: #f3f3f3;
   --footer-border: rgba(49, 48, 55, 0.1);
   --footer-text-color: rgba(49, 48, 55, 0.5);
@@ -23,6 +25,8 @@
   --main-text-color: #fff;
   --main-bg: #313037;
   --secondary-bg: #45444b;
+  --input-bg: rgba(255, 255, 255, 0.1);
+  --input-border: rgba(49, 48, 55, 0.1);
   --nav-border: #313037;
   --footer-border: rgba(255, 255, 255, 0.1);
   --footer-text-color: rgba(255, 255, 255, 0.5);
@@ -43,6 +47,8 @@ $active-text-color: var(--active-text-color);
 $main-text-color: var(--main-text-color);
 $main-bg: var(--main-bg);
 $secondary-bg: var(--secondary-bg);
+$input-bg: var(--input-bg);
+$input-border: var(--input-border);
 $nav-border: var(--nav-border);
 $footer-border: var(--footer-border);
 $footer-text-color: var(--footer-text-color);

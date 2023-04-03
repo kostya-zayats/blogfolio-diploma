@@ -13,7 +13,7 @@ const SignIn = () => {
           <Input type={'text'} title={'Email'} placeholder={'Your email'} />
         </div>
         <div className={styles['registration-unit']}>
-          <Input type={'password'} title={'Password'} placeholder={'Your pasword'} />
+          <Input type={'password'} title={'Password'} error={'eqweq'} placeholder={'Your pasword'} />
         </div>
         <div className={styles['registration-unit']}>
           <Button title={'Sign In'} type={ButtonTypes.Primary} />
