@@ -4,6 +4,7 @@ import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
 import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
+import Home from "./Pages/Home";
 
 
 const App = () => {
@@ -18,6 +19,8 @@ const App = () => {
         <SignIn />
 
         <SignUp />
+
+        <Home />
 
         <Footer />
 
