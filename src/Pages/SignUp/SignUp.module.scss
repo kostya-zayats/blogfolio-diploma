@@ -1,0 +1,41 @@
+@import "../../Styles/Vars/Vars.module";
+@import "../../Styles/Mixin/Mixin.module";
+
+.registration-unit {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-top: 4rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.registration-unit-auth {
+  color: $registration-light-text;
+  margin-top: 2.4rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  span {
+    cursor: pointer;
+    color: $active-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.forgot-password {
+  cursor: pointer;
+  color: $main-text-color;
+  margin-top: 1.6rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
