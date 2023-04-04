@@ -14,22 +14,7 @@ const Home = () => {
 
       <Tab />
 
-      <NewsList>
-        <>
-          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
-          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
-          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
-          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
-          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
-          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
-          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
-          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
-          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
-          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
-          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
-          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
-        </>
-      </NewsList>
+      <NewsList newsList={MOCK_NEWS_POSTS_LIST} />
     </>
   );
 };

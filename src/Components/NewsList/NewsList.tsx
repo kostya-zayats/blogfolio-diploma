@@ -1,16 +1,22 @@
 import React, {FC} from 'react';
 
 import styles from './NewsList.module.scss';
+import {NewsPostsList} from "../../Constants/@types";
+import NewsListUnit from "../NewsListUnit/NewsListUnit";
 
 type NewsListProps = {
-  children?: React.ReactNode;
+  newsList: NewsPostsList;
 };
 
-const NewsList: FC<NewsListProps> = ({children}) => {
+const NewsList: FC<NewsListProps> = ({newsList}) => {
 
   return (
     <div className={styles["news-list"]}>
-      {children}
+      {
+        newsList.map((newsListUnit) => {
+          return <NewsListUnit newsPost={newsListUnit} />
+        })
+      }
     </div>
   );
 };
