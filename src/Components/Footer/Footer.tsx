@@ -7,8 +7,8 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <div>©2022 Blogolog</div>
-      <div className={styles["footer-theme-switcher-wrap"]}>Dark theme <ThemeSwitcher /></div>
+      <div>{'©2022 Blogolog'}</div>
+      <div className={styles["footer-theme-switcher-wrap"]}>{'Dark theme'} <ThemeSwitcher /></div>
     </footer>
   );
 };

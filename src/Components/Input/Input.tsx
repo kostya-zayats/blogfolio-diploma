@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, forwardRef} from 'react';
 import classnames from "classnames";
 
 import styles from './Input.module.scss';
@@ -12,7 +12,7 @@ type InputProps = {
   onFocus?: () => void;
 }
 
-const Input: FC<InputProps> = ({type, placeholder, title, error, unicClass}) => {
+const Input = forwardRef<HTMLInputElement, InputProps>(({type, placeholder, title, error, unicClass}, ref) => {
 
   return (
     <div className={styles['input-wrap']}>
@@ -20,6 +20,7 @@ const Input: FC<InputProps> = ({type, placeholder, title, error, unicClass}) => 
       <input
         type={type}
         placeholder={placeholder}
+        ref={ref}
         className={
           classnames(
             unicClass,
@@ -30,6 +31,6 @@ const Input: FC<InputProps> = ({type, placeholder, title, error, unicClass}) => 
       {error && <div className={styles['input-error-msg']}>{error}</div>}
     </div>
   );
-};
+});
 
 export default Input;

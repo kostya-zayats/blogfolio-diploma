@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import FormContainer from "../../Components/FormContainer/FormContainer";
 import Input from "../../Components/Input";
 import Button, {ButtonTypes} from "../../Components/Button";
@@ -6,11 +6,19 @@ import styles from "./SignUp.module.scss";
 
 const SignUp = () => {
 
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, []);
+
   return (
     <FormContainer title={'Sign Up'}>
       <>
         <div className={styles['registration-unit']}>
-          <Input type={'text'} title={'Name'} placeholder={'Your name'} />
+          <Input ref={inputRef} type={'text'} title={'Name'} placeholder={'Your name'} />
         </div>
         <div className={styles['registration-unit']}>
           <Input type={'text'} title={'Email'} placeholder={'Your email'} />

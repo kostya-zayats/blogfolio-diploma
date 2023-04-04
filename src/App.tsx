@@ -17,13 +17,13 @@ const App = () => {
 
       <div className="container">
 
-        <Home />
+        {/*<Home />*/}
 
-        {/*<Post />
+        {/*<Post />*/}
 
         <SignIn />
 
-        <SignUp />*/}
+        {/*<SignUp />*/}
 
         <Footer />
 
