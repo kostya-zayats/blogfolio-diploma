@@ -14,7 +14,7 @@ const NewsList: FC<NewsListProps> = ({newsList}) => {
     <div className={styles["news-list"]}>
       {
         newsList.map((newsListUnit) => {
-          return <NewsListUnit newsPost={newsListUnit} />
+          return <NewsListUnit key={newsListUnit.id} newsPost={newsListUnit} />
         })
       }
     </div>

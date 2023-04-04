@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import NewsList from "../../Components/NewsList";
 import NewsListUnit from "../../Components/NewsListUnit";
 import Header from "../../Components/Header";
@@ -7,6 +7,11 @@ import {MOCK_NEWS_POSTS_LIST} from "../../Constants/const";
 
 
 const Home = () => {
+  const [cardsList, setCardsList] = useState(null);
+
+  useEffect(() => {
+    console.log('Render');
+  });
 
   return (
     <>
