@@ -5,12 +5,12 @@ import {NewsPostsList} from "../../Constants/@types";
 import NewsListUnit from "../NewsListUnit/NewsListUnit";
 
 type NewsListProps = {
-  newsList: NewsPostsList;
+  newsList: NewsPostsList | null;
 };
 
 const NewsList: FC<NewsListProps> = ({newsList}) => {
 
-  return (
+  return newsList && newsList.length > 0 ? (
     <div className={styles["news-list"]}>
       {
         newsList.map((newsListUnit) => {
@@ -18,7 +18,9 @@ const NewsList: FC<NewsListProps> = ({newsList}) => {
         })
       }
     </div>
-  );
+  ) : (
+    <div className={styles['news-empty']}>{'No news'}</div>
+  )
 };
 
 export default NewsList;

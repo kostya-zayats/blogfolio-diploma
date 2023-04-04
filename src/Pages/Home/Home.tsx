@@ -1,17 +1,17 @@
 import React, {useState, useEffect} from 'react';
 import NewsList from "../../Components/NewsList";
-import NewsListUnit from "../../Components/NewsListUnit";
 import Header from "../../Components/Header";
 import Tab from "../../Components/Tab";
 import {MOCK_NEWS_POSTS_LIST} from "../../Constants/const";
+import {NewsPostsList} from '../../Constants/@types';
 
 
 const Home = () => {
-  const [cardsList, setCardsList] = useState(null);
+  const [newsList, setNewsList] = useState<NewsPostsList | null>(null);
 
   useEffect(() => {
-    console.log('Render');
-  });
+    setNewsList(MOCK_NEWS_POSTS_LIST);
+  }, []);
 
   return (
     <>
@@ -19,7 +19,7 @@ const Home = () => {
 
       <Tab />
 
-      <NewsList newsList={MOCK_NEWS_POSTS_LIST} />
+      <NewsList newsList={newsList} />
     </>
   );
 };

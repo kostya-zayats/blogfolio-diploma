@@ -1,6 +1,16 @@
+@import "../../Styles/Vars/Vars.module";
+@import "../../Styles/Mixin/Mixin.module";
+
 .news-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: 0 -1.6rem;
+}
+
+.news-empty {
+  font-weight: 600;
+  font-size: 5.6rem;
+  line-height: 8rem;
+  color: $error-color;
 }
