@@ -6,6 +6,8 @@ import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
 import Home from "./Pages/Home";
 import Post from "./Pages/Post";
+import NewsListUnit from "./Components/NewsListUnit/NewsListUnit";
+import {MOCK_NEWS_POSTS_LIST} from "./Constants/const";
 
 
 const App = () => {
@@ -17,13 +19,15 @@ const App = () => {
 
       <div className="container">
 
-        <SignIn />
+        <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
 
-        <SignUp />
+        {/*<SignIn />
+
+        <SignUp />*/}
 
         <Home />
 
-        <Post />
+        {/*<Post />*/}
 
         <Footer />
 

@@ -1,22 +1,26 @@
 import React, {FC} from 'react';
 
 import styles from './NewsListUnit.module.scss';
+import {NewsPost} from "../../Constants/@types";
 
-type InputProps = {
-  title: string;
+
+type NewsListUnitProps = {
+  newsPost: NewsPost;
 }
 
-const NewsListUnit: FC<InputProps> = ({title}) => {
+const NewsListUnit: FC<NewsListUnitProps> = ({ newsPost }) => {
+
+  const { title, date, image } = newsPost;
 
   return (
     <div className={styles["news-list-item-wrap"]}>
       <div className={styles["news-list-item"]}>
         <div className={styles["news-list-item-pic"]}>
           <div className={styles["news-list-item-pic-overlay"]}/>
-          <img src="https://media.istockphoto.com/id/1264074047/vector/breaking-news-background.jpg?s=1024x1024&w=is&k=20&c=OQpfeXBSwFZZ-OI08FautEpYI-3iUAJHlZTOTxRS3xE=" alt="news-bg"/>
+          <img src={image} alt="news-bg"/>
         </div>
         <div className={styles["news-list-item-desc"]}>
-          <div className={styles["news-list-item-desc-date"]}>April 20, 2021</div>
+          <div className={styles["news-list-item-desc-date"]}>{date}</div>
           <div className={styles["news-list-item-title"]}>{title}</div>
         </div>
       </div>

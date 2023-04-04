@@ -3,6 +3,8 @@ import NewsList from "../../Components/NewsList";
 import NewsListUnit from "../../Components/NewsListUnit";
 import Header from "../../Components/Header";
 import Tab from "../../Components/Tab";
+import {MOCK_NEWS_POSTS_LIST} from "../../Constants/const";
+
 
 const Home = () => {
 
@@ -14,18 +16,18 @@ const Home = () => {
 
       <NewsList>
         <>
-          <NewsListUnit title={'AstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronautsAstronauts'}/>
-          <NewsListUnit title={'Astronauts prep for new solar'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
-          <NewsListUnit title={'Astronauts prep for'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
-          <NewsListUnit title={'Astronauts prep for new solar arrays on nearly seven-hour spacewalk'}/>
+          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
+          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
+          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
+          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
+          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
+          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
+          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
+          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
+          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
+          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
+          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
+          <NewsListUnit newsPost={MOCK_NEWS_POSTS_LIST} />
         </>
       </NewsList>
     </>
