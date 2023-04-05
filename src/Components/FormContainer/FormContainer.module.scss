@@ -12,8 +12,12 @@
   font-size: 1.6rem;
   line-height: 2.4rem;
 
-  span {
-    cursor: pointer;
+  a {
+    color: $main-text-color;
+
+    &:before, &:after {
+      background-color: $main-text-color;
+    }
   }
 }
 
