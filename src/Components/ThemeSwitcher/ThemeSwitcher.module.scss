@@ -10,6 +10,10 @@
   border-radius: 1rem;
   cursor: pointer;
   position: relative;
+
+  &:hover {
+    background-color: $active-color;
+  }
 }
 
 .theme-switcher-check {

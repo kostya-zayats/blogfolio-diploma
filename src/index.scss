@@ -40,8 +40,9 @@ h1 {
   overflow: auto;
   display: flex;
   flex-direction: column;
+  color: $main-text-color;
   background-color: $main-bg;
-  @include transition(.3s background-color);
+  @include transition(.3s background-color, .3s color);
 }
 
 .container {

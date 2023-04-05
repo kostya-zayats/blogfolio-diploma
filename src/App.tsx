@@ -1,35 +1,46 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
+import ThemeProvider from "./Context/Theme/ThemeProvider";
+import {Theme} from './Constants/@types';
+import classnames from 'classnames';
 import SignIn from "./Pages/SignIn";
-import SignUp from "./Pages/SignUp";
-import Home from "./Pages/Home";
-import Post from "./Pages/Post";
+import SignUp from "./Pages/SignUp/SignUp";
+import Post from "./Pages/Post/Post";
+import Home from "./Pages/Home/Home";
 
 
 const App = () => {
 
+  const [theme, setTheme] = useState(Theme.Light);
+
+  const onCangeTheme = (value: Theme) => {
+    setTheme(value);
+  };
+
   return (
-    <div className='main-container'>
+    <ThemeProvider theme={theme} onChangeTheme={onCangeTheme}>
+      <div className={classnames('main-container', { 'dark-theme' : theme === Theme.Dark })}>
 
-      <Navigation/>
+        <Navigation/>
 
-      <div className="container">
+        <div className="container">
 
-        {/*<Home />*/}
+          {/*<Home />*/}
 
-        {/*<Post />*/}
+          {/*<Post />*/}
 
-        <SignIn />
+          <SignIn />
 
-        {/*<SignUp />*/}
+          {/*<SignUp />*/}
 
-        <Footer />
+          <Footer />
+
+        </div>
 
       </div>
-
-    </div>
+    </ThemeProvider>
   );
 };
 
