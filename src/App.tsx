@@ -5,10 +5,7 @@ import Footer from "./Components/Footer";
 import ThemeProvider from "./Context/Theme/ThemeProvider";
 import {Theme} from './Constants/@types';
 import classnames from 'classnames';
-import SignIn from "./Pages/SignIn";
-import SignUp from "./Pages/SignUp/SignUp";
-import Post from "./Pages/Post/Post";
-import Home from "./Pages/Home/Home";
+import Router from './Pages/Router';
 
 
 const App = () => {
@@ -27,13 +24,7 @@ const App = () => {
 
         <div className="container">
 
-          {/*<Home />*/}
-
-          {/*<Post />*/}
-
-          <SignIn />
-
-          {/*<SignUp />*/}
+          <Router />
 
           <Footer />
 
