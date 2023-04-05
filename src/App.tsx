@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 
-import Navigation from "./Components/Navigation";
-import Footer from "./Components/Footer";
 import ThemeProvider from "./Context/Theme/ThemeProvider";
 import {Theme} from './Constants/@types';
 import classnames from 'classnames';
 import Router from './Pages/Router';
+import PagesWrapper from "./Pages/PagesWarpper";
 
 
 const App = () => {
@@ -20,15 +19,9 @@ const App = () => {
     <ThemeProvider theme={theme} onChangeTheme={onCangeTheme}>
       <div className={classnames('main-container', { 'dark-theme' : theme === Theme.Dark })}>
 
-        <Navigation/>
-
-        <div className="container">
-
+        <PagesWrapper>
           <Router />
-
-          <Footer />
-
-        </div>
+        </PagesWrapper>
 
       </div>
     </ThemeProvider>
