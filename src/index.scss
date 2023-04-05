@@ -21,6 +21,37 @@ input, textarea, a, button {
   outline: none;
 }
 
+a {
+  color: $active-color;
+  text-decoration: none;
+  position: relative;
+
+  &:before, &:after {
+    content: "";
+    background-color: $active-color;
+    width: 0;
+    height: .1rem;
+    position: absolute;
+    top: 100%;
+    @include transition(.3s width);
+  }
+
+  &:before {
+    right: 50%;
+  }
+
+  &:after {
+    left: 50%;
+  }
+
+  &:hover {
+
+    &:before, &:after {
+      width: 50%;
+    }
+  }
+}
+
 h1 {
   font-weight: 700;
   font-size: 5.6rem;

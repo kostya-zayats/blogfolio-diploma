@@ -1,3 +1,9 @@
+export enum PageNames {
+  Home = '/',
+  SignIn = '/sign-in',
+  SignUp = '/sign-up',
+}
+
 export enum Theme {
   Light = 'light',
   Dark = 'dark'

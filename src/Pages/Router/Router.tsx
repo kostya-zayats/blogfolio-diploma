@@ -4,12 +4,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import SignIn from "../SignIn";
 import SignUp from "../SignUp";
 import Home from "../Home";
-
-export enum PageNames {
-  Home = '/',
-  SignIn = '/sign-in',
-  SignUp = '/sign-up',
-}
+import {PageNames} from "../../Constants/@types";
 
 const Router = () => {
   return (

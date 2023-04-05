@@ -3,6 +3,8 @@ import FormContainer from "../../Components/FormContainer/FormContainer";
 import Input from "../../Components/Input";
 import Button, {ButtonTypes} from "../../Components/Button";
 import styles from "./SignUp.module.scss";
+import {NavLink} from "react-router-dom";
+import {PageNames} from "../../Constants/@types";
 
 const SignUp = () => {
 
@@ -33,7 +35,7 @@ const SignUp = () => {
           <Button title={'Sign In'} type={ButtonTypes.Primary} />
         </div>
         <div className={styles['registration-unit-auth']}>
-          {'Already have an account?'} <span>{'Sign In'}</span>
+          {'Already have an account?'} <NavLink to={PageNames.SignIn}>{'Sign In'}</NavLink>
         </div>
       </>
     </FormContainer>
