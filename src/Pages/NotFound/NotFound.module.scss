@@ -1,0 +1,41 @@
+@import "../../Styles/Vars/Vars.module";
+@import "../../Styles/Mixin/Mixin.module";
+
+.not-found-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 7.2rem;
+}
+
+.not-found-title {
+  font-weight: 300;
+  font-size: 20rem;
+  line-height: 24.2rem;
+  color: $active-color;
+  @include transition(.3s color);
+}
+
+.not-found-desc {
+  font-weight: 800;
+  font-size: 4.2rem;
+  line-height: 7rem;
+}
+
+.home-link {
+  display: block;
+  margin-bottom: 3.2rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-top: 4.8rem;
+
+  a {
+    color: $main-text-color;
+
+    &:before, &:after {
+      background-color: $main-text-color;
+    }
+  }
+}
