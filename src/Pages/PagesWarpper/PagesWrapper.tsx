@@ -1,12 +1,9 @@
-import React, {FC, ReactElement} from 'react';
+import React from 'react';
 import Navigation from "../../Components/Navigation/Navigation";
 import Footer from "../../Components/Footer/Footer";
+import {Outlet} from "react-router";
 
-type PagesWrapperProps = {
-  children: ReactElement;
-}
-
-const PagesWrapper:FC<PagesWrapperProps> = ({children}) => {
+const PagesWrapper = () => {
 
   return (
     <>
@@ -14,7 +11,7 @@ const PagesWrapper:FC<PagesWrapperProps> = ({children}) => {
 
       <div className="container">
 
-        {children}
+        <Outlet />
 
         <Footer />
 
