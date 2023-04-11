@@ -85,3 +85,10 @@ h1 {
   width: 100%;
   flex-grow: 1;
 }
+
+.myOverlayClass {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: 100;
+}
