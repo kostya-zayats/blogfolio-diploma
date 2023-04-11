@@ -1,9 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
 import themeReducer from "./Reducers/themeReducer";
-import newsReducer from "./Reducers/newsReducer";
 
 export const store = configureStore({
-  reducer: { themeReducer, newsReducer },
+  reducer: { themeReducer },
 });
 
 export type RootState = ReturnType<typeof store.getState>

@@ -4,7 +4,6 @@ import Header from "../../Components/Header";
 import Tab from "../../Components/Tab";
 import {MOCK_NEWS_POSTS_LIST} from "../../Constants/const";
 import {NewsPostsList} from '../../Constants/@types';
-import SelectedNewsModal from "./SelectedNewsModal";
 
 
 const Home = () => {
@@ -19,7 +18,6 @@ const Home = () => {
       <Header title={'Blog'} />
       <Tab />
       <NewsList newsList={newsList} />
-      <SelectedNewsModal/>
     </>
   );
 };
