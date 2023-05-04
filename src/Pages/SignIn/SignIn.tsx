@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import FormContainer from "../../Components/FormContainer/FormContainer";
 import Input from "../../Components/Input";
 import Button, {ButtonTypes} from "../../Components/Button";
@@ -7,6 +7,8 @@ import {NavLink} from "react-router-dom";
 import {PageNames} from "../../Constants/@types";
 
 const SignIn = () => {
+  const [login, setLogin] = useState('');
+  const [password, setPassword] = useState('');
 
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -20,10 +22,21 @@ const SignIn = () => {
     <FormContainer title={'Sign In'}>
       <>
         <div className={styles['registration-unit']}>
-          <Input ref={inputRef} type={'text'} title={'Email'} placeholder={'Your email'} />
+          <Input
+            value={login}
+            onChange={(value: string) => setLogin(value)}
+            ref={inputRef}
+            type={'text'}
+            title={'Email'}
+            placeholder={'Your email'} />
         </div>
         <div className={styles['registration-unit']}>
-          <Input type={'password'} title={'Password'} placeholder={'Your pasword'} />
+          <Input
+            value={password}
+            onChange={(value: string) => setPassword(value)}
+            type={'password'}
+            title={'Password'}
+            placeholder={'Your pasword'} />
         </div>
         <div className={styles['forgot-password']}>Forgot password?</div>
         <div className={styles['registration-unit']}>

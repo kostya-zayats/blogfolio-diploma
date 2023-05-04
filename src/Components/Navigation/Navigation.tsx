@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Input from "../Input/Input";
 // @ts-ignore
 import logo from '../../Assets/logo.svg';
@@ -8,6 +8,7 @@ import {SearchIcon} from "../../Assets/icons";
 import UserName from "../UserName/UserName";
 
 const Navigation = () => {
+  const [search, setSearch] = useState('');
 
   return (
     <nav>
@@ -16,7 +17,11 @@ const Navigation = () => {
       </div>
       <div className={styles["nav-search"]}>
         <SearchIcon unicClass={styles["nav-search-ico"]} />
-        <Input type={'text'} unicClass={styles["nav-search-input"]} />
+        <Input
+          value={search}
+          onChange={setSearch}
+          type={'text'}
+          unicClass={styles["nav-search-input"]} />
       </div>
       <UserName title={'Kostya Zayats'} />
     </nav>
