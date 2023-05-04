@@ -3,14 +3,30 @@ import FormContainer from "../../Components/FormContainer/FormContainer";
 import Input from "../../Components/Input";
 import Button, {ButtonTypes} from "../../Components/Button";
 import styles from "./SignUp.module.scss";
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 import {PageNames} from "../../Constants/@types";
+import {useDispatch} from "react-redux";
+import { registerUser } from "../../Redux/Reducers/authReducer";
 
 const SignUp = () => {
-  const [name, setName] = useState('');
+  const [username, setUserName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwordConfirm, setPasswordConfirm] = useState('');
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const onSignUp = () => {
+    dispatch(
+      registerUser({
+        data: {username, password, email},
+        callback: () =>
+          navigate(PageNames.RegistrationConfirm, {
+            state: {email}
+          }),
+      })
+    );
+  };
 
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -25,8 +41,8 @@ const SignUp = () => {
       <>
         <div className={styles['registration-unit']}>
           <Input
-            value={name}
-            onChange={(value: string) => setName(value)}
+            value={username}
+            onChange={(value: string) => setUserName(value)}
             ref={inputRef}
             type={'text'}
             title={'Name'}
@@ -57,7 +73,10 @@ const SignUp = () => {
             placeholder={'Confirm password'} />
         </div>
         <div className={styles['registration-unit']}>
-          <Button title={'Sign In'} type={ButtonTypes.Primary} />
+          <Button
+            title={'Sign In'}
+            type={ButtonTypes.Primary}
+            onClick={onSignUp} />
         </div>
         <div className={styles['registration-unit-auth']}>
           {'Already have an account?'} <NavLink to={PageNames.SignIn}>{'Sign In'}</NavLink>

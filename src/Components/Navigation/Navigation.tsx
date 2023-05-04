@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 import Input from "../Input/Input";
-// @ts-ignore
-import logo from '../../Assets/logo.svg';
-
 import styles from './Navigation.module.scss';
 import {SearchIcon} from "../../Assets/icons";
 import UserName from "../UserName/UserName";
+// @ts-ignore
+import logo from '../../Assets/logo.svg';
 
 const Navigation = () => {
   const [search, setSearch] = useState('');

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, {FC, ReactElement} from 'react';
 import classnames from 'classnames';
 
 import styles from './Button.module.scss';
@@ -10,14 +10,21 @@ export enum ButtonTypes {
 }
 
 type ButtonProps = {
-  title: string;
+  title: string | ReactElement;
   type: ButtonTypes;
   unicClass?: string;
   disabled?: boolean;
   onClick?: () => void;
+  onDefaultClick: () => void;
 }
 
-const Button: FC<ButtonProps> = ({type, title, unicClass, disabled, onClick}) => {
+export const withDefaultOnClick = (Component: any) => {
+  return (props: any) => <Component {...props} onDefaultClick={() => console.log('Button error')}  />
+};
+
+const Button: FC<ButtonProps> = (props) => {
+  const { type, title, onClick, unicClass, disabled, onDefaultClick } = props;
+
   const buttonClassName = styles[type];
 
   return (
@@ -28,10 +35,10 @@ const Button: FC<ButtonProps> = ({type, title, unicClass, disabled, onClick}) =>
         unicClass,
         {[styles.disabled]: !!disabled}
       )}
-      onClick={onClick}>
+      onClick={onClick ? onClick : onDefaultClick}>
       {title}
     </button>
   );
 };
 
-export default Button;
+export default withDefaultOnClick(Button);

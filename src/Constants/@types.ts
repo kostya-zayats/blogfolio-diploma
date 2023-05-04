@@ -2,6 +2,7 @@ export enum PageNames {
   Home = '/',
   SignIn = '/sign-in',
   SignUp = '/sign-up',
+  RegistrationConfirm = '/sign-up/confirm',
 }
 
 export enum Theme {
