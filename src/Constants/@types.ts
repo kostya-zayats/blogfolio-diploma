@@ -3,6 +3,7 @@ export enum PageNames {
   SignIn = '/sign-in',
   SignUp = '/sign-up',
   RegistrationConfirm = '/sign-up/confirm',
+  NewsPage = '/news/:id',
   ActivateUser = '/activate/:uid/:token',
 }
 
