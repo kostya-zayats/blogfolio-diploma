@@ -36,3 +36,25 @@
   line-height: 8rem;
   color: $error-color;
 }
+
+.news-post-nav {
+  margin-bottom: 3.2rem;
+  display: flex;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: $btn-disabled-text-color;
+}
+
+.news-post-nav-unit-link {
+  color: $main-text-color;
+
+  &:before, &:after {
+    background-color: $main-text-color;
+  }
+}
+
+.news-post-nav-separator {
+  font-weight: 500;
+  margin: 0 .8rem;
+}
