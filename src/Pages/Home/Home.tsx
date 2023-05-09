@@ -10,14 +10,7 @@ import { getNews } from "../../Redux/Reducers/newsReducer";
 
 
 const Home = () => {
-  const [newsList, setNewsList] = useState<NewsPostsList | null>(null);
-
-  const allPosts = useSelector(NewsSelectors.getAllNews);
-  console.log(allPosts);
-
-  useEffect(() => {
-    setNewsList(MOCK_NEWS_POSTS_LIST);
-  }, []);
+  const allNews = useSelector(NewsSelectors.getAllNews);
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -28,7 +21,7 @@ const Home = () => {
     <>
       <Header title={'Blog'} />
       <Tab />
-      <NewsList newsList={allPosts} />
+      <NewsList newsList={allNews} />
     </>
   );
 };
