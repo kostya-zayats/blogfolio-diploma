@@ -4,12 +4,14 @@ import createSagaMiddleware from "redux-saga";
 import themeReducer from "./Reducers/themeReducer";
 import authReducer from './Reducers/authReducer';
 import rootSaga from "./Sagas/rootSaga";
+import newsReducer from "./Reducers/newsReducer";
 
 
 const sagaMiddleware = createSagaMiddleware();
 
 const rootReducer = {
   themeReducer,
+  newsReducer: newsReducer,
   authReducer
 };
 

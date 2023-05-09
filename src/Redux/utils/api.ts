@@ -7,6 +7,11 @@ const registerUser = (data: RegisterUserData) => {
   return API.post('/auth/users/', data);
 };
 
+const getAllNews = () => {
+  return API.get('/blog/posts/?limit=100');
+};
+
 export default {
   registerUser,
+  getAllNews
 };
