@@ -1,0 +1,23 @@
+@import "../../Styles/Vars/Vars.module";
+@import "../../Styles/Mixin/Mixin.module";
+
+.registration-unit {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-top: 4rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.registration-confirm-text {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+
+  span {
+    font-weight: 700;
+  }
+}

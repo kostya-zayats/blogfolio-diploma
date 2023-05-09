@@ -22,7 +22,7 @@ const RegistrationConfirm = () => {
           </div>
           <div className={styles['registration-unit']}>
             <Button
-              title={'Go to home'}
+              title={'Go to Home'}
               type={ButtonTypes.Primary}
               onClick={() => {navigate(PageNames.Home)}}
             />

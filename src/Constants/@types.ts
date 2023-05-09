@@ -3,6 +3,7 @@ export enum PageNames {
   SignIn = '/sign-in',
   SignUp = '/sign-up',
   RegistrationConfirm = '/sign-up/confirm',
+  ActivateUser = '/activate/:uid/:token',
 }
 
 export enum Theme {

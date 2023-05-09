@@ -74,7 +74,7 @@ const SignUp = () => {
         </div>
         <div className={styles['registration-unit']}>
           <Button
-            title={'Sign In'}
+            title={'Sign Up'}
             type={ButtonTypes.Primary}
             onClick={onSignUp} />
         </div>
