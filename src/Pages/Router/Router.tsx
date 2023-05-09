@@ -6,11 +6,7 @@ import SignIn from "../SignIn";
 import SignUp from "../SignUp";
 import PagesWrapper from "../PagesWarpper";
 import NotFound from "../NotFound";
-
-const RegistrationConfirm = () => {
-  const {state} = useLocation();
-  return <div>{state?.email || ''}</div>;
-};
+import RegistrationConfirm from "../RegistrationConfirm";
 
 const Router = () => {
   return (
