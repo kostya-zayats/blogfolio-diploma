@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .nav-user-initials {
@@ -30,7 +31,6 @@
 
 .nav-user-name {
   white-space: nowrap;
-  cursor: pointer;
 }
 
 .nav-user-logout {
@@ -45,6 +45,10 @@
   cursor: pointer;
   white-space: nowrap;
   display: none;
+
+  &.show {
+    display: block;
+  }
 
   &:before {
     content: "";
