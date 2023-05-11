@@ -5,6 +5,7 @@ import {ACCESS_TOKEN_KEY} from "../../Constants/const";
 
 const INITIAL_STATE = {
   isLoggedIn: !!localStorage.getItem(ACCESS_TOKEN_KEY),
+  userName: '',
 };
 
 const authSlice = createSlice({
@@ -16,9 +17,20 @@ const authSlice = createSlice({
     signInUser: (state, action: PayloadAction<SignInUserPayload>) => {},
     setLoggedIn: (state, action: PayloadAction<boolean>) => {
       state.isLoggedIn = action.payload;
-    }
+    },
+    getUserData: (state, action: PayloadAction<undefined>) => {},
+    setUserData: (state, action: PayloadAction<string>) => {
+      state.userName = action.payload;
+    },
   }
 });
-export const {registerUser, activateUser, signInUser, setLoggedIn} = authSlice.actions;
+export const {
+  registerUser,
+  activateUser,
+  signInUser,
+  setLoggedIn,
+  getUserData,
+  setUserData
+} = authSlice.actions;
 
 export default authSlice.reducer;

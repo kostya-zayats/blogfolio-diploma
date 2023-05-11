@@ -22,7 +22,7 @@ const Navigation = () => {
           type={'text'}
           unicClass={styles["nav-search-input"]} />
       </div>
-      <UserName title={'Kostya Zayats'} />
+      <UserName />
     </nav>
   );
 };

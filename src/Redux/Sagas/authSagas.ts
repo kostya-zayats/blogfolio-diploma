@@ -1,5 +1,5 @@
 import {takeLatest, all, call, put} from 'redux-saga/effects';
-import {registerUser, activateUser, signInUser, setLoggedIn} from '../Reducers/authReducer';
+import {registerUser, activateUser, signInUser, setLoggedIn, setUserData, getUserData} from '../Reducers/authReducer';
 import {PayloadAction} from "@reduxjs/toolkit/dist/createAction";
 import {ActivateUserPayload, RegisterUserPayload, SignInUserPayload} from "../Types/auth";
 import API from '../utils/api'
@@ -37,7 +37,18 @@ function* signInUserWorker(action: PayloadAction<SignInUserPayload>) {
     yield put(setLoggedIn(true));
     callback();
   } else {
-    console.warn('Cannot activate user:', problem);
+    console.warn('Cannot sign in:', problem);
+  }
+}
+
+function* getUserDataWorker() {
+  const accessToken = localStorage.getItem(ACCESS_TOKEN_KEY) || '';
+
+  const {ok, problem, data} = yield call(API.getUserInfo, accessToken);
+  if (ok && data) {
+    yield put(setUserData(data.username))
+  } else {
+    console.warn('Cannot get user data:', problem);
   }
 }
 
@@ -46,5 +57,6 @@ export default function* authSaga() {
     takeLatest(registerUser, registerUserWorker),
     takeLatest(activateUser, activateUserWorker),
     takeLatest(signInUser, signInUserWorker),
+    takeLatest(getUserData, getUserDataWorker),
   ]);
 }
