@@ -15,7 +15,7 @@ const UserName = () => {
   return (
     <div className={styles["nav-user"]}>
       {isLoggedIn ? <div className={styles["nav-user-initials"]}>{initials}</div> : null}
-      {isLoggedIn ? <div className={styles["nav-user-name"]}>{username}</div> : <NavLink to={PageNames.SignIn}>Sign In</NavLink>}
+      {isLoggedIn ? <><div className={styles["nav-user-name"]}>{username}</div><div className={styles["nav-user-logout"]}>Log Out</div></> : <NavLink to={PageNames.SignIn}>Sign In</NavLink>}
     </div>
   );
 };

@@ -2,6 +2,7 @@
 @import "../../Styles/Mixin/Mixin.module";
 
 .nav-user {
+  position: relative;
   height: 100%;
   border-left: .1rem solid $nav-border;
   @include transition(.3s border-left);
@@ -29,4 +30,31 @@
 
 .nav-user-name {
   white-space: nowrap;
+  cursor: pointer;
+}
+
+.nav-user-logout {
+  position: absolute;
+  margin-top: 2rem;
+  padding: 2.4rem 3.2rem;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: $secondary-bg;
+  box-shadow: $main-box-shadow;
+  cursor: pointer;
+  white-space: nowrap;
+  display: none;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    width: 2rem;
+    height: 2rem;
+    margin-left: -1rem;
+    left: 50%;
+    background-color: $secondary-bg;
+    transform: rotate(45deg);
+  }
 }
